@@ -1,0 +1,625 @@
+/*All Custom Css Will Add here
+html{
+    background: url(imeages/Ju_bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x:hidden;
+}*/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+.header{
+    color:white;
+    font-size: 6vw;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0px 0px 25px #00ffff;
+    
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+    
+}
+
+.headline{
+    
+    margin-top: 20px;
+    font-size: 2vw; 
+    font-weight: bold;
+    color:white; 
+}
+html{
+    height:auto;
+}
+
+/*Responsive menu css*/
+
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu > ul {
+  background: rgba(180,0,185,.5);
+}
+#cssmenu > ul > li {
+  float: left;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective:1000px;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgba(180,0,185,.5);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#cssmenu > ul > li.active > a {
+  color: #dff2fa;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: rgba(180,0,185,.5);
+  -webkit-transform: rotateX(90deg) translateY(-23px);
+  -moz-transform: rotateX(90deg) translateY(-23px);
+  transform: rotateX(90deg) translateY(-23px);
+  -ms-transform: none;
+}
+#cssmenu > ul > li > a::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 16px 20px;
+  color: #dff2fa;
+  background: #19799f;
+  content: attr(data-title);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -ms-transform: translateY(-18px);
+}
+#cssmenu > ul > li:hover > a::before,
+#cssmenu > ul > li > a:hover::before {
+  background: #3db2e1;
+}
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul {
+  width: 100%;
+  text-align: left;
+}
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center {
+  float: none;
+  display: block;
+  border-top: 1px solid rgba(100, 100, 100, 0.1);
+}
+#cssmenu.small-screen > ul > li:hover > a,
+#cssmenu.small-screen > ul > li > a:hover {
+  color: #dff2fa;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  -ms-transform: none;
+}
+#cssmenu.small-screen > ul > li > a::before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #3db2e1;
+}
+#cssmenu.small-screen #menu-button:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 22px;
+  height: 3px;
+}
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  border-top: 2px solid #dff2fa;
+  border-bottom: 2px solid #dff2fa;
+}
+#cssmenu.small-screen #menu-button:before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+}
+#cssmenu.small-screen #menu-button.menu-opened:before {
+  background: #dff2fa;
+}
+
+/*end responsive menu css*/
+
+.routine{
+    
+    height: 150px;
+    border: 1px solid blue;
+   
+    background-color:rgba(229,1,255,.5);
+    background-size: 100% 100%;
+    margin:auto;
+    
+    color: white;
+    text-align: center;
+    padding:5px;
+    border-radius: 10px;
+    font-size:larger;
+}
+.ads{
+    
+    height: 150px;
+    border: 1px solid blue;
+    background-color:rgba(15,244,248,.5);
+    background-size: 100% 100%;
+    margin:auto;
+    color: #990099;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    font-size:larger;
+}
+.ads:hover{
+    background-color:rgba(229,1,255,.5);
+    color:white;
+}
+.routine:hover{
+    
+ 
+    background-color:rgba(15,244,248,.5);
+    color:black;
+}
+table,tr,td{
+    border:1px solid black;
+   
+    border-radius: 5px;
+    margin:auto;
+    font-size: 90%;
+}
+tr,td{
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.ads2{
+    
+    height: 150px;
+    width: 100%;
+    background-image: url(../imeages/banr.jpg);
+    background-size: 100% 100%;
+    margin:auto;
+   
+    
+}
+.CWF{ 
+    
+    margin-top: 20px;
+    font-size: 2vw; 
+    font-weight: bold;
+    color:white; 
+    margin-left: 15px;
+}
+
+p{
+    color: #000000;
+    font-size: 3vw;
+    text-align: center;
+/*    text-shadow: 0px 0px 25px #00ffff , 0px 0px 25px #ffffff;*/
+}
+.author{
+    margin:auto; 
+    height:100px;
+    width: 120px;
+    opacity:0.0;
+    z-index: 100;
+    text-align: center;
+    color:aqua;
+}
+.author:hover{
+    opacity: 1;
+}
+.footer{
+    background-color: #660066;
+    color:white;
+    height:50px;
+    width:100%;
+    padding:10px;
+    content:" ";
+    clear:both;
+    font-size:20px;
+    z-index: -1;
+    margin-bottom:0px;
+    margin-top: -100px;
+    
+    
+}
+
+.subHead{
+  background-color: #990099;
+  border: 1px solid #00ffff;
+ color:wheat;
+ text-align: center;
+ font-weight: bold;
+ border-radius: 10px 10px 0px 0px;
+ padding: 5px;
+}
+
+
+
+.subject{border:1px solid #00ffff; position: relative; color:white; text-decoration: none; text-align: center;}
+
+a{
+    color:aqua;
+    display: block;
+}
+a:active{
+    color:red;
+}
+a:hover{
+    color:white;
+    
+}
+
+.notice{
+  font-size: 1vw;
+  color:aqua; 
+ 
+    
+}
+
+
+.Link{
+    margin:auto !important;
+    height:50px;
+    width:50%;
+    padding: 5px 10px;
+    background-color: rgba(51,255,255,.5);
+    margin-bottom: 0px;
+}
+.new{
+    
+    color:white;
+     font-weight: bolder;
+    animation-name:new;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    z-index: 1;
+    
+}
+.footerMenu ul li{
+    
+   text-decoration: none;
+   float:left;
+   list-style-type: none;
+   margin-left: 5px;
+   display: block;
+   padding: 10px;
+   font-size: 1vw;
+   
+}
+.footerMenu ul li a{
+    display:block;
+    color:black;
+    height: 100%;
+}
+.footerMenu ul li a:hover{
+    display:block;
+    color:blue;
+    text-decoration: none;
+    
+}
+.week{
+   
+}
+
+
+.social{
+     
+    height:30px;
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+.social a{
+    color: #660066;   
+    margin-right: 10px;
+    display: inline;
+    padding:5px;
+    border-radius: 5px;
+    border:1px solid #990099;
+}
+.social a:hover{
+    color:#00ffff; 
+    background-color: #660066;
+    
+}
+/* End the index page css*/
+.stdRecord{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2vw;
+    background-color: red;
+}
+.roll, .name , .number , .callbutton{
+    
+    height:80px;
+    border:1px solid rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.2);
+    padding:20px;
+    box-sizing: border-box;
+    color:black;
+}
+.roll:hover, .name:hover , .number:hover , .callbutton:hover{
+    background-color:  rgba(39,253,162,.5);
+    color:white;
+}
+.sphoto{
+    height:80px;
+    border:1px solid #00ffff;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+.author{
+    display:none;
+}
+p,.headline{
+    
+    font-size:5vw;
+}
+
+.CWF{ 
+    
+    margin-top: 20px;
+    font-size: 5vw; 
+    font-weight: bold;
+    color:white; 
+    margin-left: 15px;
+}
+
+.notice{
+    font-size: 3vw;
+    
+}
+
+.julogo{
+    
+    background-image: url(../imeages/Jahangirnagar_blue.png);
+    height:150px;
+    width:150px;
+    background-size: 100% 100%;
+    display:block;
+    margin: auto;
+    margin-top:20px;
+    
+}
+
+.roll, .name , .number , .callbutton{
+    height:50px;
+    font-size: 3vw;
+    padding: 15px;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+  .sphoto,.roll, .name , .number , .callbutton{
+    height:50px;
+    padding: 15px
+      
+}
+
+}
+
+@media only screen and (min-width: 761px) and (max-width: 991px) {
+    
+    .ads, .ads2{
+        display:none
+    }  
+    
+}
+@media only screen and (min-width: 250px) and (max-width: 767px) { 
+/*    .roll{
+        display:none;
+        
+    }*/
+    
+    .sphoto{
+    height:130px;
+    width:100px;
+    margin-left: 35%;
+    background-size: 100% 100%;
+}
+  
+    .callbutton{
+        background-color: #0000ff;
+        font-size: 25px;
+        padding:10px;
+}
+}
+
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0px 0px 25px #00ffff;}
+  to {
+    text-shadow: 0px 0px 25px #660066 ;
+    
+  }
+}
+@keyframes new {
+from {
+   color:#660066; font-size: 10px; }
+  to {
+    color:red; font-size: 15px; ;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*This is Extra CSS*/
+
+/*
+body{
+    margin-top:0px;
+}
+
+.col-xx1{width:8.33%;}
+.col-xx2{width:16.66%;}
+.col-xx3{width:25%;}
+.col-xx4{width:33.33%;}
+.col-xx5{width:41.66%;}
+.col-xx6{width:50%;}
+.col-xx7{width:58.33%;}
+.col-xx8{width:66.66%;}
+.col-xx9{width:75%;}
+.col-xx10{width:83.33%;}
+.col-xx11{width:91.66%;}
+.col-xx12{width:100%;}
+
+
+[class*='col-']{
+    float:left;
+    border:.5px solid black;
+}
+
+.imgRespnsive{
+    height:100%;
+    width:100%;
+}
+@font-face {
+  font-family: fgfgf;
+  src: sds;
+}*/
