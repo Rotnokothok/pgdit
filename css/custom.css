@@ -292,7 +292,7 @@ tr,td{
 }
 
 p{
-    color: #000000;
+    color: #990099;
     font-size: 3vw;
     text-align: center;
 /*    text-shadow: 0px 0px 25px #00ffff , 0px 0px 25px #ffffff;*/
@@ -496,7 +496,9 @@ p,.headline{
     font-size: 3vw;
     
 }
-
+.hideit{
+    display:none;
+}
 .julogo{
     
     background-image: url(../imeages/Jahangirnagar_blue.png);
