@@ -517,6 +517,16 @@ p,.headline{
     padding: 15px;
 }
 
+
+.footer{
+    height: 100px;
+    padding:15px 5px;
+    margin-top: 15px;
+}
+.ads{
+    margin-top: 10px;
+}
+
 }
 
 
