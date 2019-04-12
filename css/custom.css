@@ -82,6 +82,7 @@ html{
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective:1000px;
+  list-style-type: none;
 }
 #cssmenu.align-center > ul {
   font-size: 0;
@@ -90,6 +91,7 @@ html{
 #cssmenu.align-center > ul > li {
   display: inline-block;
   float: none;
+  
 }
 #cssmenu.align-right > ul > li {
   float: right;
@@ -474,7 +476,7 @@ a:hover{
 
 
 @media only screen and (max-width: 768px) {
-
+.carousel-indicators{display: none;}
 .author{
     display:none;
 }
@@ -555,7 +557,7 @@ video#bgvid:hover{
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
- 
+  
   .sphoto,.roll, .name , .number , .callbutton{
     height:50px;
     padding: 15px
