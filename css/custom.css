@@ -453,8 +453,33 @@ a:hover{
 }
 
 
+.patwari{
+   background-image:url(../imeages/Fazlul_karim.jpg);
+   height: 180px;
+   width:50%;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.patwari:hover{
+    background-image: url(../imeages/Patwary_nameplate.jpg);
+    
+    
+}
+.akkas{
+    
+   background-image:url(../imeages/Akkas_ali.jpg);
+   height: 180px;
+   width:50%;
+   background-repeat: no-repeat;
+   background-position: center; 
+}
+.akkas:hover{
+   background-image: url(../imeages/Akkas_ali_nameplate.jpg);
+}
 
-
+.check{
+    background-color: red;
+}
 
 
 
