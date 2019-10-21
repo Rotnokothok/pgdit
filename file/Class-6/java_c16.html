@@ -1,0 +1,29 @@
+<html>
+
+<body>
+
+
+
+<p>Jahangirnagar University
+  <table border=1>
+
+<div id="ll"></div>
+ <script>
+    var i,str="	<table><tr><th>Price</th>   <th>Quantity</th>	<th>Total</th><th>Action</th></tr>";
+	for(i =1;i<=10;i++){
+	 str+="<tr>"; 
+	 str+="<td><input id='x' type=text NAME=X width=30  ></td>";
+	 str+="<td><input id='y' type=text NAME=Y width=30  ></td>";
+	 str+="<td><input id='z' type=text NAME=Z disabled width=30></td> ";
+	 str+="<td><input id='button' value= 'Sum' type=button  onClick='sum()'></td>";
+	 str+="</tr>";
+ 	}
+	str+="	</table>";
+   document.getElementById("ll").innerHTML=str;
+ </script>
+
+
+
+</body>
+
+</html>
